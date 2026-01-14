@@ -176,8 +176,8 @@ try {
         }
     }
 
-    # Output for CLI feedback
-    Write-Output "[OK] Transcript backed up"
+    # Output for CLI feedback + context hint for Claude
+    Write-Output "[OK] Transcript backed up (full history: exports/index.json)"
 
 } catch {
     # Silent failure - hooks should never break the user experience
